@@ -2,4 +2,4 @@
 
 We will share our code anonymously in this website. If you cannot see the code, we apologize. We will make our code public upon acceptance.
 
-Our code is tested with Python 3.8.0, PyTorch 1.7.1, PyTorchGeometric 1.7.0.
+Our code is tested with Python 3.8.0, PyTorch 1.7.1, PyTorchGeometric 1.7.0, NumPY 1.21.4, NetworkX 2.5, tqdm 4.53.0
