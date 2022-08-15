@@ -159,6 +159,7 @@ if __name__ == '__main__':
             print(f'Top {i}: {y[i - 1]}')
 
     # Cost based on Coverage Summary
+    print('Calculating cost...')
     costs_from_summary = minimum_distance_cost_summary(S[:, summary_from_coverage], k=S.shape[1])
 
     y = []
@@ -168,5 +169,5 @@ if __name__ == '__main__':
     results = y
 
     for i in x_axis:
-        if i in [1, 5, 10, 25, 50, 100, 200]:
+        if i in [1, 5, 10, 25, 50, 100]:
             print(f'Top {i}: {y[i - 1]}')

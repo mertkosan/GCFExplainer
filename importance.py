@@ -6,7 +6,7 @@ import distance
 from torch_geometric.data import Data, Batch, DataLoader
 
 
-def prepare_and_get(graphs, gnn_model, original_graph_indices, theta, importance_function_name, device1, device2, dataset_name):
+def prepare_and_get(graphs, gnn_model, original_graph_indices, alpha, theta, device1, device2, dataset_name):
     original_graphs = graphs[original_graph_indices.tolist()]
     neurosed_folder = f'data/{dataset_name}/neurosed'
     if not os.path.exists(neurosed_folder):
@@ -19,10 +19,10 @@ def prepare_and_get(graphs, gnn_model, original_graph_indices, theta, importance
 
     return {
         'gnn_model': gnn_model,
+        'alpha': alpha,
         'neurosed_model': neurosed_model,
         'original_graphs': original_graphs,
         'original_graphs_element_counts': original_graphs_elements_counts,
-        'importance_function': importance_function_name,
         'distance_threshold': theta,
         'gnn_device': device1,
         'neurosed_device': device2
