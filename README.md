@@ -62,7 +62,7 @@ GCFExplainer consistently and significantly outperforms all baselines across dif
 
 ![GCFExplainer Coverage Cost](gcfexplainer_coverage_cost.png)
 
-To reproduce the results for GCFExplainer in the table, run the following script for each dataset and collect the performance corresponding to the top-10 explantions. 
+To reproduce the results for GCFExplainer in the table, run the following script for each dataset and collect the performance corresponding to the top-10 explantions: 
 ```summary
 python summary.py --dataset {dataset}
 ```
