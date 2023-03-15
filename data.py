@@ -1,4 +1,5 @@
 # Inspired by https://github.com/deepfindr/gnn-project
+# dataset classes and load function
 
 import torch
 from torch_geometric.data import Dataset, Data

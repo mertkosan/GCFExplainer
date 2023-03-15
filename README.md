@@ -4,7 +4,7 @@ This repository is a reference implementation of the global graph counterfactual
 <br/>
 > Global Counterfactual Explainer for Graph Neural Networks.<br>
 > Mert Kosan*, Zexi Huang*, Sourav Medya, Sayan Ranu, Ambuj Singh.<br>
-> ACM International Conference on Web Search and Data Mining, 2023.
+> ACM International Conference on Web Search and Data Mining, 2023.<br>
 > https://dl.acm.org/doi/10.1145/3539597.3570376
 
 The link contains the manuscript and the presentation video in supplement.
@@ -27,17 +27,7 @@ If you want to install dependencies manually, we tested our code in Python 3.8.0
 
 All our experiments are run on a machine with 2 NVIDIA GeForce RTX 2080 GPU (8GB of RAM) and 32 Intel Xeon CPUs (2.10GHz and 128GB of RAM).
 
-## Files
-
-- [data.py](data.py): dataset classes and load function
-- [distance.py](distance.py): distance calculation function between graphs
-- [util.py](util.py): utility functions
-- [gnn.py](gnn.py): training gnn models, we already shared trained ones at data/{dataset_name}/gnn
-- [importance.py](importance.py): pre and post importance calculation functions
-- [vrrw.py](vrrw.py): generate counterfactuals candidates
-- [summary.py](summary.py): generate summary counterfactuals from candidates using greedy algorithm
-
-### Generating Counterfactual Candidates
+## Generating Counterfactual Candidates
 
 To generate counterfactual candidates for AIDS dataset with the default hyperparameters, run this command:
 
@@ -67,11 +57,19 @@ python summary.py --help
 
 ## Coverage and Cost Performance
 
+Table shows Recourse coverage (𝜃 = 0.1) and median recourse cost comparison between GCFExplainer and baselines for a 10-graph global explanation. 
+GCFExplainer consistently and significantly outperforms all baselines across different datasets.
+
 ![GCFExplainer Coverage Cost](gcfexplainer_coverage_cost.png)
 
 ## Case Study on AIDS dataset
 
-![GCFExplainer Case Study AIDS](gcfexplainer_case_study.png)
+Figure illustrates global and local counterfactual explanations for the AIDS dataset. The global counterfactual graph (c) presents a high-level recourse rule—changing ketones and ethers into 
+aldehydes (shown in blue)—to combat HIV, while the edge removals (shown in red) recommended by local counterfactual examples (b) are hard to generalize.
+
+<p align="center" width="100%">
+    <img src="gcfexplainer_case_study.png">
+</p>
 
 ## Citing
 If you find our framework useful, please consider citing the following paper:

@@ -1,4 +1,5 @@
-import util
+# distance calculation functions between graphs
+
 import os
 
 import torch

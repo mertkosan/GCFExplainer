@@ -1,3 +1,5 @@
+# training gnn models, we already shared trained ones at data/{dataset_name}/gnn
+
 import os
 import argparse
 import torch

@@ -1,3 +1,5 @@
+# training preparation functions and importance calculations
+
 import os.path
 import torch
 import util

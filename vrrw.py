@@ -1,7 +1,8 @@
+# generate counterfactuals candidates
+
 import os
 
 import torch
-import util
 import torch_geometric.utils as torch_utils
 import networkx as nx
 import random

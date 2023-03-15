@@ -1,3 +1,6 @@
+# generate summary counterfactuals from candidates using greedy algorithm, and report coverage and cost performance for different size of summary set
+
+
 from tqdm import tqdm
 import torch
 
