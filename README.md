@@ -57,15 +57,19 @@ python summary.py --help
 
 ## Coverage and Cost Performance
 
-Table shows Recourse coverage (𝜃 = 0.1) and median recourse cost comparison between GCFExplainer and baselines for a 10-graph global explanation. 
-GCFExplainer consistently and significantly outperforms all baselines across different datasets.
+The following table shows recourse coverage (𝜃 = 0.1) and median recourse cost comparison between GCFExplainer and baselines for a 10-graph global explanation. 
+GCFExplainer consistently and significantly outperforms all baselines across different datasets. 
 
 ![GCFExplainer Coverage Cost](gcfexplainer_coverage_cost.png)
 
+To reproduce the results for GCFExplainer in the table, run the following script for each dataset and collect the performance corresponding to the top-10 explantions. 
+```summary
+python summary.py --dataset {dataset}
+```
+
 ## Case Study on AIDS dataset
 
-Figure illustrates global and local counterfactual explanations for the AIDS dataset. The global counterfactual graph (c) presents a high-level recourse rule—changing ketones and ethers into 
-aldehydes (shown in blue)—to combat HIV, while the edge removals (shown in red) recommended by local counterfactual examples (b) are hard to generalize.
+The following table illustrates global and local counterfactual explanations for the AIDS dataset. The global counterfactual graph (c) presents a high-level recourse rule—changing ketones and ethers into aldehydes (shown in blue)—to combat HIV, while the edge removals (shown in red) recommended by local counterfactual examples from baselines (b) are hard to generalize.
 
 <p align="center" width="100%">
     <img src="gcfexplainer_case_study.png">
