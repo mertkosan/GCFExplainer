@@ -69,7 +69,7 @@ python summary.py --dataset {dataset}
 
 ## Case Study on AIDS dataset
 
-The following table illustrates global and local counterfactual explanations for the AIDS dataset. The global counterfactual graph (c) presents a high-level recourse rule—changing ketones and ethers into aldehydes (shown in blue)—to combat HIV, while the edge removals (shown in red) recommended by local counterfactual examples from baselines (b) are hard to generalize.
+The following figure illustrates global and local counterfactual explanations for the AIDS dataset. The global counterfactual graph (c) presents a high-level recourse rule—changing ketones and ethers into aldehydes (shown in blue)—to combat HIV, while the edge removals (shown in red) recommended by local counterfactual examples from baselines (b) are hard to generalize.
 
 <p align="center" width="100%">
     <img src="gcfexplainer_case_study.png">
