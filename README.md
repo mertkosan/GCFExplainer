@@ -27,6 +27,13 @@ If you want to install dependencies manually, we tested our code in Python 3.8.0
 
 All our experiments are run on a machine with 2 NVIDIA GeForce RTX 2080 GPU (8GB of RAM) and 32 Intel Xeon CPUs (2.10GHz and 128GB of RAM).
 
+## Generating Base Models
+
+We already provided gnn and neurosed base models. If you want to run using your own dataset, firstly, you have to train your own gnn and neurosed base models. 
+
+- For gnn base models, you can use our [gnn.py](gnn.py) module.
+- For neurosed base models, please follow [neurosed](https://github.com/idea-iitd/greed) repository.
+
 ## Generating Counterfactual Candidates
 
 To generate counterfactual candidates for AIDS dataset with the default hyperparameters, run this command:
