@@ -29,10 +29,12 @@ All our experiments are run on a machine with 2 NVIDIA GeForce RTX 2080 GPU (8GB
 
 ## Generating Base Models
 
-We already provided gnn and neurosed base models. If you want to run using your own dataset, firstly, you have to train your own gnn and neurosed base models. 
+We have already provided gnn and neurosed base models. If you want to run our method using your own dataset, firstly, you have to train your own gnn and neurosed base models.
 
 - For gnn base models, you can use our [gnn.py](gnn.py) module.
 - For neurosed base models, please follow [neurosed](https://github.com/idea-iitd/greed) repository.
+
+If neurosed model is hard to train, you will have to update our importance function to use your graph edit distance function.
 
 ## Generating Counterfactual Candidates
 
